@@ -1,0 +1,1373 @@
+{
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "seed": 20261023,
+  "python": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2",
+    "scikit-learn": "1.6.1",
+    "lightgbm": "4.7.0",
+    "threadpoolctl": "3.7.0",
+    "joblib": "1.4.2",
+    "pip": "26.1.2"
+  },
+  "feature_count": 208,
+  "feature_names": [
+    "local_answer_valid",
+    "group_answer_votes",
+    "group_valid_candidates",
+    "group_distinct_valid_answers",
+    "group_maximum_answer_votes",
+    "group_answer_votes_gap",
+    "group_answer_is_maximum_vote",
+    "group_maximum_vote_ties",
+    "group_answer_vote_rank",
+    "local_answer_sign",
+    "local_answer_is_zero",
+    "local_answer_is_integer",
+    "local_answer_log_abs",
+    "local_answer_signed_log",
+    "local_answer_abs_below_one",
+    "local_answer_denominator_log",
+    "group_answer_numeric_rank",
+    "group_answer_group_log_median_gap",
+    "local_answer_matches_question_number",
+    "local_answer_matches_trace_number",
+    "local_answer_trace_number_fraction",
+    "local_answer_nearest_question_relative_gap",
+    "local_answer_nearest_question_log_gap",
+    "local_answer_ratio_question_integer_count",
+    "local_question_ratio_answer_integer_count",
+    "local_answer_matches_question_sum",
+    "local_answer_matches_question_product",
+    "local_answer_above_question_maximum",
+    "local_answer_below_question_minimum",
+    "local_question_characters",
+    "local_question_words",
+    "local_question_numbers",
+    "local_question_maximum_abs_log",
+    "local_question_minimum_abs_log",
+    "local_question_has_percent",
+    "local_question_has_money",
+    "local_trace_characters",
+    "local_trace_words",
+    "local_trace_lines",
+    "local_trace_unique_words",
+    "local_trace_content_words",
+    "local_trace_word_diversity",
+    "local_question_word_recall",
+    "local_question_word_precision",
+    "local_question_word_jaccard",
+    "local_trace_numbers",
+    "local_trace_unique_numbers",
+    "local_trace_question_number_overlap",
+    "local_trace_question_number_fraction",
+    "local_trace_new_number_fraction",
+    "local_trace_number_word_fraction",
+    "local_trace_maximum_abs_number_log",
+    "local_trace_equals",
+    "local_trace_plus",
+    "local_trace_minus",
+    "local_trace_multiply",
+    "local_trace_divide",
+    "local_trace_hashes",
+    "local_trace_boxed",
+    "local_trace_bold",
+    "local_trace_latex",
+    "local_trace_percent",
+    "local_trace_question_marks",
+    "local_trace_parentheses",
+    "local_trace_bullets",
+    "local_trace_numbered_steps",
+    "local_trace_final_answer_mentions",
+    "local_equation_checked",
+    "local_equation_correct",
+    "local_equation_errors",
+    "local_equation_correct_rate",
+    "local_equation_last_correct",
+    "local_equation_maximum_relative_error_log",
+    "embedding_norm",
+    "embedding_norm_ratio",
+    "embedding_cosine_group_mean",
+    "embedding_cosine_others_mean",
+    "embedding_cosine_others_minimum",
+    "embedding_cosine_others_maximum",
+    "embedding_cosine_others_std",
+    "embedding_cosine_same_answer_mean",
+    "embedding_cosine_different_answer_mean",
+    "embedding_cosine_answer_margin",
+    "embedding_group_mean_norm",
+    "local_trace_uncertainty",
+    "local_trace_uncertainty_rate",
+    "local_trace_revision",
+    "local_trace_revision_rate",
+    "local_trace_confidence",
+    "local_trace_confidence_rate",
+    "local_trace_verification",
+    "local_trace_verification_rate",
+    "local_trace_conditions",
+    "local_trace_conditions_rate",
+    "local_trace_operations_words",
+    "local_trace_operations_words_rate",
+    "group_trace_characters_maximum_gap",
+    "group_trace_words_maximum_gap",
+    "group_trace_lines_maximum_gap",
+    "group_trace_unique_words_maximum_gap",
+    "group_trace_content_words_maximum_gap",
+    "group_trace_word_diversity_maximum_gap",
+    "group_trace_numbers_maximum_gap",
+    "group_trace_unique_numbers_maximum_gap",
+    "group_trace_question_number_overlap_maximum_gap",
+    "group_trace_question_number_fraction_maximum_gap",
+    "group_trace_new_number_fraction_maximum_gap",
+    "group_trace_number_word_fraction_maximum_gap",
+    "group_trace_maximum_abs_number_log_maximum_gap",
+    "group_trace_equals_maximum_gap",
+    "group_trace_plus_maximum_gap",
+    "group_trace_minus_maximum_gap",
+    "group_trace_multiply_maximum_gap",
+    "group_trace_divide_maximum_gap",
+    "group_trace_hashes_maximum_gap",
+    "group_trace_boxed_maximum_gap",
+    "group_trace_bold_maximum_gap",
+    "group_trace_latex_maximum_gap",
+    "group_trace_percent_maximum_gap",
+    "group_trace_question_marks_maximum_gap",
+    "group_trace_parentheses_maximum_gap",
+    "group_trace_bullets_maximum_gap",
+    "group_trace_numbered_steps_maximum_gap",
+    "group_trace_final_answer_mentions_maximum_gap",
+    "group_equation_checked_maximum_gap",
+    "group_equation_correct_maximum_gap",
+    "group_equation_errors_maximum_gap",
+    "group_equation_correct_rate_maximum_gap",
+    "group_equation_last_correct_maximum_gap",
+    "group_equation_maximum_relative_error_log_maximum_gap",
+    "group_embedding_norm_maximum_gap",
+    "group_embedding_norm_ratio_maximum_gap",
+    "group_embedding_cosine_group_mean_maximum_gap",
+    "group_embedding_cosine_others_mean_maximum_gap",
+    "group_embedding_cosine_others_minimum_maximum_gap",
+    "group_embedding_cosine_others_maximum_maximum_gap",
+    "group_embedding_cosine_others_std_maximum_gap",
+    "group_embedding_cosine_same_answer_mean_maximum_gap",
+    "group_embedding_cosine_different_answer_mean_maximum_gap",
+    "group_embedding_cosine_answer_margin_maximum_gap",
+    "group_trace_uncertainty_maximum_gap",
+    "group_trace_uncertainty_rate_maximum_gap",
+    "group_trace_revision_maximum_gap",
+    "group_trace_revision_rate_maximum_gap",
+    "group_trace_confidence_maximum_gap",
+    "group_trace_confidence_rate_maximum_gap",
+    "group_trace_verification_maximum_gap",
+    "group_trace_verification_rate_maximum_gap",
+    "group_trace_conditions_maximum_gap",
+    "group_trace_conditions_rate_maximum_gap",
+    "group_trace_operations_words_maximum_gap",
+    "group_trace_operations_words_rate_maximum_gap",
+    "group_trace_characters_rank",
+    "group_trace_words_rank",
+    "group_trace_lines_rank",
+    "group_trace_unique_words_rank",
+    "group_trace_content_words_rank",
+    "group_trace_word_diversity_rank",
+    "group_trace_numbers_rank",
+    "group_trace_unique_numbers_rank",
+    "group_trace_question_number_overlap_rank",
+    "group_trace_question_number_fraction_rank",
+    "group_trace_new_number_fraction_rank",
+    "group_trace_number_word_fraction_rank",
+    "group_trace_maximum_abs_number_log_rank",
+    "group_trace_equals_rank",
+    "group_trace_plus_rank",
+    "group_trace_minus_rank",
+    "group_trace_multiply_rank",
+    "group_trace_divide_rank",
+    "group_trace_hashes_rank",
+    "group_trace_boxed_rank",
+    "group_trace_bold_rank",
+    "group_trace_latex_rank",
+    "group_trace_percent_rank",
+    "group_trace_question_marks_rank",
+    "group_trace_parentheses_rank",
+    "group_trace_bullets_rank",
+    "group_trace_numbered_steps_rank",
+    "group_trace_final_answer_mentions_rank",
+    "group_equation_checked_rank",
+    "group_equation_correct_rank",
+    "group_equation_errors_rank",
+    "group_equation_correct_rate_rank",
+    "group_equation_last_correct_rank",
+    "group_equation_maximum_relative_error_log_rank",
+    "group_embedding_norm_rank",
+    "group_embedding_norm_ratio_rank",
+    "group_embedding_cosine_group_mean_rank",
+    "group_embedding_cosine_others_mean_rank",
+    "group_embedding_cosine_others_minimum_rank",
+    "group_embedding_cosine_others_maximum_rank",
+    "group_embedding_cosine_others_std_rank",
+    "group_embedding_cosine_same_answer_mean_rank",
+    "group_embedding_cosine_different_answer_mean_rank",
+    "group_embedding_cosine_answer_margin_rank",
+    "group_trace_uncertainty_rank",
+    "group_trace_uncertainty_rate_rank",
+    "group_trace_revision_rank",
+    "group_trace_revision_rate_rank",
+    "group_trace_confidence_rank",
+    "group_trace_confidence_rate_rank",
+    "group_trace_verification_rank",
+    "group_trace_verification_rate_rank",
+    "group_trace_conditions_rank",
+    "group_trace_conditions_rate_rank",
+    "group_trace_operations_words_rank",
+    "group_trace_operations_words_rate_rank"
+  ],
+  "train_questions": 4755,
+  "train_hard_questions": 2114,
+  "validation_questions": 798,
+  "validation_hard_questions": 355,
+  "feature_seconds": 25.855056100001093,
+  "total_training_search_seconds": 90.12142280000262,
+  "experiments": [
+    {
+      "name": "majority_valid_answer",
+      "validation": {
+        "correct": 688,
+        "n": 798,
+        "accuracy": 86.21553884711778,
+        "hard_correct": 245,
+        "hard_n": 355,
+        "hard_accuracy": 69.01408450704226
+      },
+      "training_seconds": 0.0
+    },
+    {
+      "name": "raw_embedding_all",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "embedding",
+          "file": "raw_embedding_all.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 720,
+        "n": 798,
+        "accuracy": 90.22556390977444,
+        "hard_correct": 277,
+        "hard_n": 355,
+        "hard_accuracy": 78.0281690140845
+      },
+      "training_seconds": 25.66124519999721,
+      "parameters": {
+        "C": 0.01,
+        "hard_training_only": false,
+        "center_training_groups": false,
+        "training_questions": 4755,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 371,
+        "feature_scaling": "none"
+      }
+    },
+    {
+      "name": "centered_embedding_all",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "embedding",
+          "file": "centered_embedding_all.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 732,
+        "n": 798,
+        "accuracy": 91.72932330827066,
+        "hard_correct": 289,
+        "hard_n": 355,
+        "hard_accuracy": 81.40845070422536
+      },
+      "training_seconds": 5.1832862999872304,
+      "parameters": {
+        "C": 0.1,
+        "hard_training_only": false,
+        "center_training_groups": true,
+        "training_questions": 4755,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 82,
+        "feature_scaling": "none"
+      }
+    },
+    {
+      "name": "centered_embedding_hard_c0.01",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "embedding",
+          "file": "centered_embedding_hard_c0.01.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 731,
+        "n": 798,
+        "accuracy": 91.60401002506265,
+        "hard_correct": 288,
+        "hard_n": 355,
+        "hard_accuracy": 81.12676056338029
+      },
+      "training_seconds": 0.9199352000141516,
+      "parameters": {
+        "C": 0.01,
+        "hard_training_only": true,
+        "center_training_groups": true,
+        "training_questions": 2114,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 33,
+        "feature_scaling": "none"
+      }
+    },
+    {
+      "name": "centered_embedding_hard_c0.03",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "embedding",
+          "file": "centered_embedding_hard_c0.03.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 741,
+        "n": 798,
+        "accuracy": 92.85714285714286,
+        "hard_correct": 298,
+        "hard_n": 355,
+        "hard_accuracy": 83.94366197183099
+      },
+      "training_seconds": 1.4649794999859296,
+      "parameters": {
+        "C": 0.03,
+        "hard_training_only": true,
+        "center_training_groups": true,
+        "training_questions": 2114,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 51,
+        "feature_scaling": "none"
+      }
+    },
+    {
+      "name": "centered_embedding_hard_c0.1",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "embedding",
+          "file": "centered_embedding_hard_c0.1.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 732,
+        "n": 798,
+        "accuracy": 91.72932330827066,
+        "hard_correct": 289,
+        "hard_n": 355,
+        "hard_accuracy": 81.40845070422536
+      },
+      "training_seconds": 1.943208400014555,
+      "parameters": {
+        "C": 0.1,
+        "hard_training_only": true,
+        "center_training_groups": true,
+        "training_questions": 2114,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 70,
+        "feature_scaling": "none"
+      }
+    },
+    {
+      "name": "local_hard_c0.01",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 748,
+        "n": 798,
+        "accuracy": 93.734335839599,
+        "hard_correct": 305,
+        "hard_n": 355,
+        "hard_accuracy": 85.91549295774648
+      },
+      "training_seconds": 0.9832254000066314,
+      "parameters": {
+        "C": 0.01,
+        "hard_training_only": true,
+        "center_training_groups": true,
+        "training_questions": 2114,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 32,
+        "feature_scaling": "training-only standard deviation for engineered features"
+      }
+    },
+    {
+      "name": "local_hard_c0.03",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.03.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 742,
+        "n": 798,
+        "accuracy": 92.98245614035088,
+        "hard_correct": 299,
+        "hard_n": 355,
+        "hard_accuracy": 84.22535211267605
+      },
+      "training_seconds": 1.394072299997788,
+      "parameters": {
+        "C": 0.03,
+        "hard_training_only": true,
+        "center_training_groups": true,
+        "training_questions": 2114,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 48,
+        "feature_scaling": "training-only standard deviation for engineered features"
+      }
+    },
+    {
+      "name": "local_hard_c0.1",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.1.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 741,
+        "n": 798,
+        "accuracy": 92.85714285714286,
+        "hard_correct": 298,
+        "hard_n": 355,
+        "hard_accuracy": 83.94366197183099
+      },
+      "training_seconds": 1.9847899999876972,
+      "parameters": {
+        "C": 0.1,
+        "hard_training_only": true,
+        "center_training_groups": true,
+        "training_questions": 2114,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 73,
+        "feature_scaling": "training-only standard deviation for engineered features"
+      }
+    },
+    {
+      "name": "full_hard_c0.01",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "full",
+          "file": "full_hard_c0.01.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 729,
+        "n": 798,
+        "accuracy": 91.35338345864662,
+        "hard_correct": 286,
+        "hard_n": 355,
+        "hard_accuracy": 80.56338028169014
+      },
+      "training_seconds": 1.2044605999835767,
+      "parameters": {
+        "C": 0.01,
+        "hard_training_only": true,
+        "center_training_groups": true,
+        "training_questions": 2114,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 36,
+        "feature_scaling": "training-only standard deviation for engineered features"
+      }
+    },
+    {
+      "name": "full_hard_c0.03",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "full",
+          "file": "full_hard_c0.03.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 732,
+        "n": 798,
+        "accuracy": 91.72932330827066,
+        "hard_correct": 289,
+        "hard_n": 355,
+        "hard_accuracy": 81.40845070422536
+      },
+      "training_seconds": 1.773270000005141,
+      "parameters": {
+        "C": 0.03,
+        "hard_training_only": true,
+        "center_training_groups": true,
+        "training_questions": 2114,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 57,
+        "feature_scaling": "training-only standard deviation for engineered features"
+      }
+    },
+    {
+      "name": "full_hard_c0.1",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "full",
+          "file": "full_hard_c0.1.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 736,
+        "n": 798,
+        "accuracy": 92.23057644110276,
+        "hard_correct": 293,
+        "hard_n": 355,
+        "hard_accuracy": 82.53521126760563
+      },
+      "training_seconds": 2.682952800008934,
+      "parameters": {
+        "C": 0.1,
+        "hard_training_only": true,
+        "center_training_groups": true,
+        "training_questions": 2114,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 90,
+        "feature_scaling": "training-only standard deviation for engineered features"
+      }
+    },
+    {
+      "name": "engineered_only_hard",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "text",
+          "file": "engineered_only_hard.npz",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 719,
+        "n": 798,
+        "accuracy": 90.1002506265664,
+        "hard_correct": 276,
+        "hard_n": 355,
+        "hard_accuracy": 77.74647887323944
+      },
+      "training_seconds": 0.37531760000274517,
+      "parameters": {
+        "C": 0.1,
+        "hard_training_only": true,
+        "center_training_groups": true,
+        "training_questions": 2114,
+        "seed": 20261023,
+        "solver": "lbfgs",
+        "max_iter": 1000,
+        "tol": 0.0001,
+        "iterations": 50,
+        "feature_scaling": "training-only standard deviation for engineered features"
+      }
+    },
+    {
+      "name": "engineered_boost_l7_m80",
+      "components": [
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l7_m80.txt",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 718,
+        "n": 798,
+        "accuracy": 89.97493734335839,
+        "hard_correct": 275,
+        "hard_n": 355,
+        "hard_accuracy": 77.46478873239437
+      },
+      "training_seconds": 1.7785200999933295,
+      "parameters": {
+        "boosting_type": "gbdt",
+        "class_weight": null,
+        "colsample_bytree": 0.9,
+        "importance_type": "split",
+        "learning_rate": 0.035,
+        "max_depth": -1,
+        "min_child_samples": 80,
+        "min_child_weight": 0.001,
+        "min_split_gain": 0.0,
+        "n_estimators": 400,
+        "n_jobs": 4,
+        "num_leaves": 7,
+        "objective": "binary",
+        "random_state": 20261023,
+        "reg_alpha": 0.0,
+        "reg_lambda": 10.0,
+        "subsample": 1.0,
+        "subsample_for_bin": 200000,
+        "subsample_freq": 0,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      }
+    },
+    {
+      "name": "engineered_boost_l15_m80",
+      "components": [
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l15_m80.txt",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 722,
+        "n": 798,
+        "accuracy": 90.47619047619048,
+        "hard_correct": 279,
+        "hard_n": 355,
+        "hard_accuracy": 78.59154929577464
+      },
+      "training_seconds": 2.6437270999886096,
+      "parameters": {
+        "boosting_type": "gbdt",
+        "class_weight": null,
+        "colsample_bytree": 0.9,
+        "importance_type": "split",
+        "learning_rate": 0.035,
+        "max_depth": -1,
+        "min_child_samples": 80,
+        "min_child_weight": 0.001,
+        "min_split_gain": 0.0,
+        "n_estimators": 400,
+        "n_jobs": 4,
+        "num_leaves": 15,
+        "objective": "binary",
+        "random_state": 20261023,
+        "reg_alpha": 0.0,
+        "reg_lambda": 10.0,
+        "subsample": 1.0,
+        "subsample_for_bin": 200000,
+        "subsample_freq": 0,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      }
+    },
+    {
+      "name": "engineered_boost_l15_m160",
+      "components": [
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l15_m160.txt",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 720,
+        "n": 798,
+        "accuracy": 90.22556390977444,
+        "hard_correct": 277,
+        "hard_n": 355,
+        "hard_accuracy": 78.0281690140845
+      },
+      "training_seconds": 3.47725269998773,
+      "parameters": {
+        "boosting_type": "gbdt",
+        "class_weight": null,
+        "colsample_bytree": 0.9,
+        "importance_type": "split",
+        "learning_rate": 0.035,
+        "max_depth": -1,
+        "min_child_samples": 160,
+        "min_child_weight": 0.001,
+        "min_split_gain": 0.0,
+        "n_estimators": 400,
+        "n_jobs": 4,
+        "num_leaves": 15,
+        "objective": "binary",
+        "random_state": 20261023,
+        "reg_alpha": 0.0,
+        "reg_lambda": 10.0,
+        "subsample": 1.0,
+        "subsample_for_bin": 200000,
+        "subsample_freq": 0,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      }
+    },
+    {
+      "name": "engineered_ranker",
+      "components": [
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_ranker.txt",
+          "weight": 1.0
+        }
+      ],
+      "validation": {
+        "correct": 725,
+        "n": 798,
+        "accuracy": 90.85213032581454,
+        "hard_correct": 282,
+        "hard_n": 355,
+        "hard_accuracy": 79.43661971830987
+      },
+      "training_seconds": 4.948272200010251,
+      "parameters": {
+        "boosting_type": "gbdt",
+        "class_weight": null,
+        "colsample_bytree": 1.0,
+        "importance_type": "split",
+        "learning_rate": 0.04,
+        "max_depth": -1,
+        "min_child_samples": 50,
+        "min_child_weight": 0.001,
+        "min_split_gain": 0.0,
+        "n_estimators": 400,
+        "n_jobs": 4,
+        "num_leaves": 15,
+        "objective": "lambdarank",
+        "random_state": 20261023,
+        "reg_alpha": 0.0,
+        "reg_lambda": 5.0,
+        "subsample": 1.0,
+        "subsample_for_bin": 200000,
+        "subsample_freq": 0,
+        "verbosity": -1,
+        "deterministic": true,
+        "force_col_wise": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l7_m80_fusion_0.1",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.9
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l7_m80.txt",
+          "weight": 0.1
+        }
+      ],
+      "validation": {
+        "correct": 744,
+        "n": 798,
+        "accuracy": 93.23308270676691,
+        "hard_correct": 301,
+        "hard_n": 355,
+        "hard_accuracy": 84.78873239436619
+      },
+      "training_seconds": 2.761745499999961,
+      "parameters": {
+        "tree_weight": 0.1,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l7_m80_fusion_0.2",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.8
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l7_m80.txt",
+          "weight": 0.2
+        }
+      ],
+      "validation": {
+        "correct": 743,
+        "n": 798,
+        "accuracy": 93.10776942355889,
+        "hard_correct": 300,
+        "hard_n": 355,
+        "hard_accuracy": 84.50704225352112
+      },
+      "training_seconds": 2.761745499999961,
+      "parameters": {
+        "tree_weight": 0.2,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l7_m80_fusion_0.35",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.65
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l7_m80.txt",
+          "weight": 0.35
+        }
+      ],
+      "validation": {
+        "correct": 740,
+        "n": 798,
+        "accuracy": 92.73182957393483,
+        "hard_correct": 297,
+        "hard_n": 355,
+        "hard_accuracy": 83.66197183098592
+      },
+      "training_seconds": 2.761745499999961,
+      "parameters": {
+        "tree_weight": 0.35,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l7_m80_fusion_0.5",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.5
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l7_m80.txt",
+          "weight": 0.5
+        }
+      ],
+      "validation": {
+        "correct": 735,
+        "n": 798,
+        "accuracy": 92.10526315789474,
+        "hard_correct": 292,
+        "hard_n": 355,
+        "hard_accuracy": 82.25352112676056
+      },
+      "training_seconds": 2.761745499999961,
+      "parameters": {
+        "tree_weight": 0.5,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l15_m80_fusion_0.1",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.9
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l15_m80.txt",
+          "weight": 0.1
+        }
+      ],
+      "validation": {
+        "correct": 744,
+        "n": 798,
+        "accuracy": 93.23308270676691,
+        "hard_correct": 301,
+        "hard_n": 355,
+        "hard_accuracy": 84.78873239436619
+      },
+      "training_seconds": 3.626952499995241,
+      "parameters": {
+        "tree_weight": 0.1,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l15_m80_fusion_0.2",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.8
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l15_m80.txt",
+          "weight": 0.2
+        }
+      ],
+      "validation": {
+        "correct": 743,
+        "n": 798,
+        "accuracy": 93.10776942355889,
+        "hard_correct": 300,
+        "hard_n": 355,
+        "hard_accuracy": 84.50704225352112
+      },
+      "training_seconds": 3.626952499995241,
+      "parameters": {
+        "tree_weight": 0.2,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l15_m80_fusion_0.35",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.65
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l15_m80.txt",
+          "weight": 0.35
+        }
+      ],
+      "validation": {
+        "correct": 739,
+        "n": 798,
+        "accuracy": 92.60651629072682,
+        "hard_correct": 296,
+        "hard_n": 355,
+        "hard_accuracy": 83.38028169014085
+      },
+      "training_seconds": 3.626952499995241,
+      "parameters": {
+        "tree_weight": 0.35,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l15_m80_fusion_0.5",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.5
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l15_m80.txt",
+          "weight": 0.5
+        }
+      ],
+      "validation": {
+        "correct": 733,
+        "n": 798,
+        "accuracy": 91.8546365914787,
+        "hard_correct": 290,
+        "hard_n": 355,
+        "hard_accuracy": 81.69014084507043
+      },
+      "training_seconds": 3.626952499995241,
+      "parameters": {
+        "tree_weight": 0.5,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l15_m160_fusion_0.1",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.9
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l15_m160.txt",
+          "weight": 0.1
+        }
+      ],
+      "validation": {
+        "correct": 744,
+        "n": 798,
+        "accuracy": 93.23308270676691,
+        "hard_correct": 301,
+        "hard_n": 355,
+        "hard_accuracy": 84.78873239436619
+      },
+      "training_seconds": 4.460478099994361,
+      "parameters": {
+        "tree_weight": 0.1,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l15_m160_fusion_0.2",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.8
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l15_m160.txt",
+          "weight": 0.2
+        }
+      ],
+      "validation": {
+        "correct": 740,
+        "n": 798,
+        "accuracy": 92.73182957393483,
+        "hard_correct": 297,
+        "hard_n": 355,
+        "hard_accuracy": 83.66197183098592
+      },
+      "training_seconds": 4.460478099994361,
+      "parameters": {
+        "tree_weight": 0.2,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l15_m160_fusion_0.35",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.65
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l15_m160.txt",
+          "weight": 0.35
+        }
+      ],
+      "validation": {
+        "correct": 738,
+        "n": 798,
+        "accuracy": 92.4812030075188,
+        "hard_correct": 295,
+        "hard_n": 355,
+        "hard_accuracy": 83.09859154929578
+      },
+      "training_seconds": 4.460478099994361,
+      "parameters": {
+        "tree_weight": 0.35,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_boost_l15_m160_fusion_0.5",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.5
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_boost_l15_m160.txt",
+          "weight": 0.5
+        }
+      ],
+      "validation": {
+        "correct": 733,
+        "n": 798,
+        "accuracy": 91.8546365914787,
+        "hard_correct": 290,
+        "hard_n": 355,
+        "hard_accuracy": 81.69014084507043
+      },
+      "training_seconds": 4.460478099994361,
+      "parameters": {
+        "tree_weight": 0.5,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_ranker_fusion_0.1",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.9
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_ranker.txt",
+          "weight": 0.1
+        }
+      ],
+      "validation": {
+        "correct": 745,
+        "n": 798,
+        "accuracy": 93.35839598997494,
+        "hard_correct": 302,
+        "hard_n": 355,
+        "hard_accuracy": 85.07042253521126
+      },
+      "training_seconds": 5.931497600016883,
+      "parameters": {
+        "tree_weight": 0.1,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_ranker_fusion_0.2",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.8
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_ranker.txt",
+          "weight": 0.2
+        }
+      ],
+      "validation": {
+        "correct": 747,
+        "n": 798,
+        "accuracy": 93.60902255639097,
+        "hard_correct": 304,
+        "hard_n": 355,
+        "hard_accuracy": 85.63380281690141
+      },
+      "training_seconds": 5.931497600016883,
+      "parameters": {
+        "tree_weight": 0.2,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_ranker_fusion_0.35",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.65
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_ranker.txt",
+          "weight": 0.35
+        }
+      ],
+      "validation": {
+        "correct": 744,
+        "n": 798,
+        "accuracy": 93.23308270676691,
+        "hard_correct": 301,
+        "hard_n": 355,
+        "hard_accuracy": 84.78873239436619
+      },
+      "training_seconds": 5.931497600016883,
+      "parameters": {
+        "tree_weight": 0.35,
+        "normalize_components": true
+      }
+    },
+    {
+      "name": "local_hard_c0.01_engineered_ranker_fusion_0.5",
+      "components": [
+        {
+          "kind": "linear",
+          "mode": "local",
+          "file": "local_hard_c0.01.npz",
+          "weight": 0.5
+        },
+        {
+          "kind": "lightgbm",
+          "mode": "text",
+          "file": "engineered_ranker.txt",
+          "weight": 0.5
+        }
+      ],
+      "validation": {
+        "correct": 743,
+        "n": 798,
+        "accuracy": 93.10776942355889,
+        "hard_correct": 300,
+        "hard_n": 355,
+        "hard_accuracy": 84.50704225352112
+      },
+      "training_seconds": 5.931497600016883,
+      "parameters": {
+        "tree_weight": 0.5,
+        "normalize_components": true
+      }
+    }
+  ],
+  "selected": {
+    "name": "local_hard_c0.01",
+    "components": [
+      {
+        "kind": "linear",
+        "mode": "local",
+        "file": "local_hard_c0.01.npz",
+        "weight": 1.0
+      }
+    ],
+    "validation": {
+      "correct": 748,
+      "n": 798,
+      "accuracy": 93.734335839599,
+      "hard_correct": 305,
+      "hard_n": 355,
+      "hard_accuracy": 85.91549295774648
+    },
+    "training_seconds": 0.9832254000066314,
+    "parameters": {
+      "C": 0.01,
+      "hard_training_only": true,
+      "center_training_groups": true,
+      "training_questions": 2114,
+      "seed": 20261023,
+      "solver": "lbfgs",
+      "max_iter": 1000,
+      "tol": 0.0001,
+      "iterations": 32,
+      "feature_scaling": "training-only standard deviation for engineered features"
+    }
+  },
+  "inference_asset_bytes": 19205,
+  "data_used_to_fit": [
+    "train"
+  ],
+  "data_used_to_select": [
+    "validation"
+  ],
+  "test_used_during_development": false,
+  "research_question": "Does centering candidate embeddings within each question and matching training to answer-disagreement groups improve selection?",
+  "hypothesis": "Removing shared question context and training on disagreement groups improves accuracy on ambiguous candidate sets.",
+  "local_environment_note": "User requested the existing Python 3.10.9 and installed packages; Python, pip and all package versions were left unchanged. Assignment README recommends Python 3.12 and numpy 2.5.3.",
+  "commands": {
+    "data_check": [
+      "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+      "check_data.py"
+    ],
+    "training": [
+      "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+      "train_selector.py",
+      "--output-dir",
+      "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\final",
+      "--seed",
+      "20261023"
+    ],
+    "validation": [
+      "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+      "evaluate_selector.py",
+      "--checkpoint",
+      "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\final\\model_bundle",
+      "--split",
+      "validation"
+    ],
+    "test": [
+      "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+      "evaluate_selector.py",
+      "--checkpoint",
+      "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\final\\model_bundle",
+      "--split",
+      "test"
+    ]
+  },
+  "source_sha256": {
+    "check_data.py": "32f203e156e3019f87bb038ade4f303da21ca2f1694bb678a3ddc44661f0b533",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "evaluate_selector.py": "64360ba5f353255fc3b3fd0801a58eea99c364f8953a2aea0d3ce70b809ed593",
+    "main.py": "04b16d696e1d3f3c6107f72e05b3618b33a905ca4b6d535b8fd70e35356bb2a4",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "selector_features.py": "82c0a076e47b7124f96bce8138abd658c51c83a659b2e12c40694f3455e24b39",
+    "selector_model.py": "64afce4ccf691d59b082b3fff2a019dc78f43ed75a090057813965a7b7b6898a",
+    "submission.py": "3a37f64e105cc858e034715c2c5bce150cd06acc40301cdf416b5343219e8a32",
+    "test_selector.py": "6e37013213bfeb13daab29328ddd7d212b7e8a25a825ec8ac08aed77739e6335",
+    "train_selector.py": "1ea2a1f60c0161007602dbc4e63b30ee17e2c28235278d9fa10bc10da6928e6b"
+  }
+}

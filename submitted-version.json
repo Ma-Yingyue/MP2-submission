@@ -1,0 +1,40 @@
+{
+    "protocol":  "dase7506-mp2-open-hard-verifier-v5",
+    "code_version":  "sha256:a7dcad683fe6bc0fbe13c023c9eca03cc87afc86a8b2df9820db1453cf656fc1",
+    "version_hash_definition":  "SHA256 of UTF-8 lines sorted by source filename, each line containing SHA-256, two spaces, filename and LF",
+    "source_sha256":  {
+                          "check_data.py":  "32f203e156e3019f87bb038ade4f303da21ca2f1694bb678a3ddc44661f0b533",
+                          "common.py":  "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+                          "evaluate_selector.py":  "64360ba5f353255fc3b3fd0801a58eea99c364f8953a2aea0d3ce70b809ed593",
+                          "main.py":  "04b16d696e1d3f3c6107f72e05b3618b33a905ca4b6d535b8fd70e35356bb2a4",
+                          "predict.py":  "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+                          "score_predictions.py":  "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+                          "selector_features.py":  "82c0a076e47b7124f96bce8138abd658c51c83a659b2e12c40694f3455e24b39",
+                          "selector_model.py":  "64afce4ccf691d59b082b3fff2a019dc78f43ed75a090057813965a7b7b6898a",
+                          "submission.py":  "3a37f64e105cc858e034715c2c5bce150cd06acc40301cdf416b5343219e8a32",
+                          "test_selector.py":  "6e37013213bfeb13daab29328ddd7d212b7e8a25a825ec8ac08aed77739e6335",
+                          "train_selector.py":  "1ea2a1f60c0161007602dbc4e63b30ee17e2c28235278d9fa10bc10da6928e6b"
+                      },
+    "checkpoint_directory":  "runs/final/model_bundle",
+    "checkpoint_fingerprint":  "ed21b5d345df8d707fa45a88e8fc2ef6419d948f85678583f29c309854f54b87",
+    "checkpoint_assets":  {
+                              "config.json":  {
+                                                  "bytes":  10137,
+                                                  "sha256":  "4218750d33f775c99a1439fffb1fcbd0e83026d27f1d85b560fd9d1a818b61d6"
+                                              },
+                              "local_hard_c0.01.npz":  {
+                                                           "bytes":  9068,
+                                                           "sha256":  "8b634c0d3cd7b6c3a5f9fc70c19700bd570866d04b63c68132918c6620078aef"
+                                                       }
+                          },
+    "checkpoint_total_bytes":  19205,
+    "selected_experiment":  "local_hard_c0.01",
+    "seed":  20261023,
+    "frozen_utc":  "2026-10-25T06:48:04.002463+00:00",
+    "official_test_result":  {
+                                 "file":  "runs/evaluation/test-score.json",
+                                 "correct":  380,
+                                 "n":  467,
+                                 "accuracy":  81.37044967880085
+                             }
+}

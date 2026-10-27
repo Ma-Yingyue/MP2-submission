@@ -1,0 +1,13 @@
+{
+  "python": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2",
+    "scikit-learn": "1.6.1",
+    "lightgbm": "4.7.0",
+    "threadpoolctl": "3.7.0",
+    "joblib": "1.4.2",
+    "pip": "26.1.2"
+  }
+}

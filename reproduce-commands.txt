@@ -1,0 +1,43 @@
+MP2 exact reproduction commands
+
+Working directory: code/
+Recorded runtime: Python 3.10.9 on Windows.
+Dependencies: requirements-submission.txt.
+Submitted code version and matching checkpoint: submitted-version.json.
+
+Installation
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-submission.txt
+
+CPU environment for all following commands
+$env:OMP_NUM_THREADS='4'
+$env:OPENBLAS_NUM_THREADS='1'
+$env:MKL_NUM_THREADS='1'
+$env:NUMEXPR_NUM_THREADS='1'
+$env:BLIS_NUM_THREADS='1'
+$env:VECLIB_MAXIMUM_THREADS='1'
+$env:CUDA_VISIBLE_DEVICES=''
+$env:PYTHONIOENCODING='utf-8'
+$env:PYTHONUTF8='1'
+
+Data validation
+.\.venv\Scripts\python.exe check_data.py
+
+Reproduce training and validation selection with seed 20261023
+.\.venv\Scripts\python.exe train_selector.py --output-dir runs/reproduced-training --seed 20261023
+
+Reproduce the submitted result without retraining
+.\.venv\Scripts\python.exe evaluate_selector.py --checkpoint runs/final/model_bundle --split validation --output-dir runs/reproduced-evaluation
+.\.venv\Scripts\python.exe evaluate_selector.py --checkpoint runs/final/model_bundle --split test --output-dir runs/reproduced-evaluation
+
+The evaluation wrapper starts fresh predict.py and independent score_predictions.py processes in sequence. The measured complete_cpu_evaluation_seconds includes their startup, imports, data and asset loading, preprocessing, prediction and scoring. Run these commands sequentially with no other evaluation process.
+
+Submitted official result: runs/evaluation/test-score.json.
+Expected test result: correct=380, n=467, accuracy=81.37044967880085 percent.
+Reproduced result: runs/reproduced-evaluation/test-score.json.
+Reproduced complete timing and hardware: runs/reproduced-evaluation/test-resources.json.
+Original experiment and search records: runs/final/experiments.json.
+Original dependencies and runtime record: runs/final/environment.json.
+Original resource measurements: runs/evaluation/validation-resources.json and runs/evaluation/test-resources.json.
+
+Fresh output directories are required. The submitted checkpoint in runs/final/model_bundle is kept frozen. The recorded local CPU timing is not a measurement on the reference Xeon Platinum 8457C.

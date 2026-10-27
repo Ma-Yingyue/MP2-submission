@@ -1,0 +1,5 @@
+experiment,validation_correct,validation_questions,validation_accuracy_percent,disagreement_correct,disagreement_questions,disagreement_accuracy_percent,model_fitting_seconds,C,disagreement_only_training,center_training_groups,feature_modes
+centered_embedding_hard_c0.1,732,798,91.72932330827066,289,355,81.40845070422536,1.943208400014555,0.1,True,True,embedding
+local_hard_c0.1,741,798,92.85714285714286,298,355,83.94366197183099,1.9847899999876972,0.1,True,True,local
+full_hard_c0.1,736,798,92.23057644110276,293,355,82.53521126760563,2.682952800008934,0.1,True,True,full
+engineered_only_hard,719,798,90.1002506265664,276,355,77.74647887323944,0.37531760000274517,0.1,True,True,text

@@ -1,0 +1,272 @@
+{
+  "split": "validation",
+  "started_at_utc": "2026-10-25T06:48:05.230794+00:00",
+  "checkpoint": "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\final\\model_bundle",
+  "checkpoint_fingerprint": "ed21b5d345df8d707fa45a88e8fc2ef6419d948f85678583f29c309854f54b87",
+  "frozen": true,
+  "assets": {
+    "config.json": {
+      "bytes": 10137,
+      "sha256": "4218750d33f775c99a1439fffb1fcbd0e83026d27f1d85b560fd9d1a818b61d6"
+    },
+    "local_hard_c0.01.npz": {
+      "bytes": 9068,
+      "sha256": "8b634c0d3cd7b6c3a5f9fc70c19700bd570866d04b63c68132918c6620078aef"
+    }
+  },
+  "asset_bytes": 19205,
+  "asset_limit_bytes": 16777216,
+  "asset_limit_pass": true,
+  "python_executable": "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "python_version": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.2",
+    "scikit-learn": "1.6.1",
+    "lightgbm": "4.7.0",
+    "threadpoolctl": "3.7.0",
+    "joblib": "1.4.2",
+    "psutil": "7.2.2",
+    "pip": "26.1.2"
+  },
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "machine": "AMD64",
+    "physical_cpu_cores": 14,
+    "logical_cpu_cores": 20,
+    "ram_total_bytes": 33968267264,
+    "ram_available_bytes_before_evaluation": 5926559744,
+    "gpu": {
+      "query": "nvidia-smi name,driver_version,memory.total",
+      "returncode": 0,
+      "output": "NVIDIA GeForce RTX 4050 Laptop GPU, 610.88, 6141 MiB",
+      "stderr": ""
+    }
+  },
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "CUDA_VISIBLE_DEVICES": ""
+  },
+  "python_environment": {
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONUTF8": "1"
+  },
+  "source_sha256": {
+    "check_data.py": "32f203e156e3019f87bb038ade4f303da21ca2f1694bb678a3ddc44661f0b533",
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "evaluate_selector.py": "64360ba5f353255fc3b3fd0801a58eea99c364f8953a2aea0d3ce70b809ed593",
+    "main.py": "04b16d696e1d3f3c6107f72e05b3618b33a905ca4b6d535b8fd70e35356bb2a4",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+    "selector_features.py": "82c0a076e47b7124f96bce8138abd658c51c83a659b2e12c40694f3455e24b39",
+    "selector_model.py": "64afce4ccf691d59b082b3fff2a019dc78f43ed75a090057813965a7b7b6898a",
+    "submission.py": "3a37f64e105cc858e034715c2c5bce150cd06acc40301cdf416b5343219e8a32",
+    "test_selector.py": "6e37013213bfeb13daab29328ddd7d212b7e8a25a825ec8ac08aed77739e6335",
+    "train_selector.py": "1ea2a1f60c0161007602dbc4e63b30ee17e2c28235278d9fa10bc10da6928e6b"
+  },
+  "official_release_integrity": {
+    "manifest_sha256": "2e9b714598e1addba61545f0d7ce4891d9d11aaf567fb341420d36694fcfd656",
+    "all_match_excluding_submission": false,
+    "files": {
+      "code/README.md": {
+        "expected_sha256": "4c4218d68818d850fbad2fe38d2b1f3d2b80b7646720f21d2356fe3c0e020bc2",
+        "actual_sha256": "4c4218d68818d850fbad2fe38d2b1f3d2b80b7646720f21d2356fe3c0e020bc2",
+        "matches_release": true
+      },
+      "code/check_data.py": {
+        "expected_sha256": "32f203e156e3019f87bb038ade4f303da21ca2f1694bb678a3ddc44661f0b533",
+        "actual_sha256": "32f203e156e3019f87bb038ade4f303da21ca2f1694bb678a3ddc44661f0b533",
+        "matches_release": true
+      },
+      "code/common.py": {
+        "expected_sha256": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+        "actual_sha256": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+        "matches_release": true
+      },
+      "code/data/LICENSE.txt": {
+        "expected_sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+        "actual_sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+        "matches_release": true
+      },
+      "code/data/NOTICE.txt": {
+        "expected_sha256": "d577cdf7202ae22f2b19ace348b0ec69958a59aaf51d30cdab902bf7c1e67d78",
+        "actual_sha256": "d577cdf7202ae22f2b19ace348b0ec69958a59aaf51d30cdab902bf7c1e67d78",
+        "matches_release": true
+      },
+      "code/data/candidates/gsm8k_test.jsonl": {
+        "expected_sha256": "1d7b4cc651bbe7258b59c3ab4af4b0f8b6b0975975d98dadea3a4050d78b6e70",
+        "actual_sha256": "1d7b4cc651bbe7258b59c3ab4af4b0f8b6b0975975d98dadea3a4050d78b6e70",
+        "matches_release": true
+      },
+      "code/data/candidates/gsm8k_test.npz": {
+        "expected_sha256": "b0805775b3902fa363253c83b850fc59c359d886a449fe4444393b8e355f0f63",
+        "actual_sha256": "b0805775b3902fa363253c83b850fc59c359d886a449fe4444393b8e355f0f63",
+        "matches_release": true
+      },
+      "code/data/candidates/gsm8k_train.jsonl": {
+        "expected_sha256": "38fa2e71c030ae301e6a87366e0700453a56d14abe73f2d14504b9cd0749ed43",
+        "actual_sha256": "38fa2e71c030ae301e6a87366e0700453a56d14abe73f2d14504b9cd0749ed43",
+        "matches_release": true
+      },
+      "code/data/candidates/gsm8k_train.npz": {
+        "expected_sha256": "3bb3d5dcbc71dc64e671c03f965594f91e195acd2be01012476d8b966a6ba1d2",
+        "actual_sha256": "3bb3d5dcbc71dc64e671c03f965594f91e195acd2be01012476d8b966a6ba1d2",
+        "matches_release": true
+      },
+      "code/data/candidates/gsm8k_validation.jsonl": {
+        "expected_sha256": "f2ca7c7c7effa91e6a2e99c597ae13b9369d776f0c08d68622e8671b8229045a",
+        "actual_sha256": "f2ca7c7c7effa91e6a2e99c597ae13b9369d776f0c08d68622e8671b8229045a",
+        "matches_release": true
+      },
+      "code/data/candidates/gsm8k_validation.npz": {
+        "expected_sha256": "a0c6c8e1919bf7e7ffe887b39954e0c905bbd4429b05135fe3fc9f4087a2c881",
+        "actual_sha256": "a0c6c8e1919bf7e7ffe887b39954e0c905bbd4429b05135fe3fc9f4087a2c881",
+        "matches_release": true
+      },
+      "code/data/gsm8k_test.jsonl": {
+        "expected_sha256": "60fe0e964e2e70c05f612823a04655a474512bf73821fafa88111313a9d87c16",
+        "actual_sha256": "60fe0e964e2e70c05f612823a04655a474512bf73821fafa88111313a9d87c16",
+        "matches_release": true
+      },
+      "code/data/gsm8k_train.jsonl": {
+        "expected_sha256": "acc662ed0328b5d38b2dee6f72ddcc956073df4ffb2ef4c4ba668cf445a92003",
+        "actual_sha256": "acc662ed0328b5d38b2dee6f72ddcc956073df4ffb2ef4c4ba668cf445a92003",
+        "matches_release": true
+      },
+      "code/data/gsm8k_validation.jsonl": {
+        "expected_sha256": "ae1522df02497e780909e208ffb4101788e97b4a5eabf883c56bb7fe40d13025",
+        "actual_sha256": "ae1522df02497e780909e208ffb4101788e97b4a5eabf883c56bb7fe40d13025",
+        "matches_release": true
+      },
+      "code/data/manifest.json": {
+        "expected_sha256": "8b3721d458e48c87eab3a28f660e663981b10617b6e7321123c6ff30b1fbe825",
+        "actual_sha256": "8b3721d458e48c87eab3a28f660e663981b10617b6e7321123c6ff30b1fbe825",
+        "matches_release": true
+      },
+      "code/predict.py": {
+        "expected_sha256": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+        "actual_sha256": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+        "matches_release": true
+      },
+      "code/requirements.txt": {
+        "expected_sha256": "5c12d85e7c08038d1dd9ffbf8119d12ce808885230a47e2bf65dcd9f114659d5",
+        "actual_sha256": "5c12d85e7c08038d1dd9ffbf8119d12ce808885230a47e2bf65dcd9f114659d5",
+        "matches_release": true
+      },
+      "code/score_predictions.py": {
+        "expected_sha256": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+        "actual_sha256": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960",
+        "matches_release": true
+      },
+      "guide/GUIDE.md": {
+        "expected_sha256": "7b4ab87265040f407854cdfb9860887f722008d24e03fffe311f99c2f2065130",
+        "actual_sha256": "9cbbfe0d58a9894e86a7436125ea19005b5d1c0e1f15c1b53245773a06cd4b80",
+        "matches_release": false
+      }
+    }
+  },
+  "prediction_command": [
+    "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\predict.py",
+    "--method",
+    "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\submission.py",
+    "--checkpoint",
+    "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\final\\model_bundle",
+    "--split",
+    "validation",
+    "--data-dir",
+    "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\data",
+    "--output",
+    "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\evaluation\\validation-predictions.json"
+  ],
+  "scoring_command": [
+    "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\score_predictions.py",
+    "--predictions",
+    "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\evaluation\\validation-predictions.json",
+    "--split",
+    "validation",
+    "--data-dir",
+    "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\data",
+    "--output",
+    "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\evaluation\\validation-score.json"
+  ],
+  "outputs": {
+    "predictions": "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\evaluation\\validation-predictions.json",
+    "score": "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\evaluation\\validation-score.json",
+    "resources": "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\evaluation\\validation-resources.json"
+  },
+  "measurement": {
+    "clock": "time.perf_counter",
+    "scope": "Fresh prediction process followed by fresh official scoring process, including startup, imports, loading and parent monitoring overhead",
+    "memory": "Process tree RSS sampled at communicate timeouts of at most 10 ms; Windows peak working set when exposed by psutil",
+    "inference_device": "CPU",
+    "reference_cpu": "Xeon Platinum 8457C",
+    "reference_cpu_verified": false
+  },
+  "completed": true,
+  "processes": [
+    {
+      "command": [
+        "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\predict.py",
+        "--method",
+        "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\submission.py",
+        "--checkpoint",
+        "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\final\\model_bundle",
+        "--split",
+        "validation",
+        "--data-dir",
+        "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\data",
+        "--output",
+        "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\evaluation\\validation-predictions.json"
+      ],
+      "pid": 23656,
+      "returncode": 0,
+      "wall_seconds": 2.848094499990111,
+      "peak_sampled_process_tree_rss_bytes": 82337792,
+      "peak_observed_working_set_bytes": 99766272,
+      "stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"validation\", \"prediction_seconds\": 2.45850259999861}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Lcx\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\score_predictions.py",
+        "--predictions",
+        "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\evaluation\\validation-predictions.json",
+        "--split",
+        "validation",
+        "--data-dir",
+        "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\data",
+        "--output",
+        "E:\\1\\LLM\\DASE7506-MP2-main\\DASE7506-MP2-main\\code\\runs\\full-20261025-144625-661446\\evaluation\\validation-score.json"
+      ],
+      "pid": 52940,
+      "returncode": 0,
+      "wall_seconds": 0.44696609998936765,
+      "peak_sampled_process_tree_rss_bytes": 28393472,
+      "peak_observed_working_set_bytes": 39526400,
+      "stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"split\": \"validation\",\n  \"correct\": 748,\n  \"n\": 798,\n  \"accuracy\": 93.734335839599,\n  \"scoring_seconds\": 0.06582389998948202\n}\n",
+      "stderr": ""
+    }
+  ],
+  "complete_cpu_evaluation_seconds": 3.2952056000067387,
+  "local_30_second_limit_pass": true,
+  "peak_sampled_child_rss_bytes": 82337792,
+  "peak_observed_child_working_set_bytes": 99766272,
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "validation",
+    "correct": 748,
+    "n": 798,
+    "accuracy": 93.734335839599,
+    "scoring_seconds": 0.06582389998948202
+  }
+}
